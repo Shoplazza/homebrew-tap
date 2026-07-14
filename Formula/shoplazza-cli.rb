@@ -5,21 +5,21 @@
 class ShoplazzaCli < Formula
   desc "The official CLI for Shoplazza Open Platform"
   homepage "https://github.com/Shoplazza/shoplazza-cli"
-  version "2.0.6"
+  version "2.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.6/shoplazza-cli-2.0.6-darwin-amd64.tar.gz"
-      sha256 "bb6e6e08510db4e63eb34029250f1f27b06a935562a0d2063584e8da36bdd005"
+      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.7/shoplazza-cli-2.0.7-darwin-amd64.tar.gz"
+      sha256 "194f24c663b7ad7b8f21ca65222e16689500323ae0747213aeff735fe0a2f0f5"
 
       define_method(:install) do
         bin.install "shoplazza"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.6/shoplazza-cli-2.0.6-darwin-arm64.tar.gz"
-      sha256 "116be5c336c139cf33b201f9fcd9cff048913e2a39b677de6bc55977360cf260"
+      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.7/shoplazza-cli-2.0.7-darwin-arm64.tar.gz"
+      sha256 "27b40f4e8dcfeba1f488eeed7f6eb0d5ab81071ca38d9f8a675eb4149c19991a"
 
       define_method(:install) do
         bin.install "shoplazza"
@@ -29,15 +29,15 @@ class ShoplazzaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.6/shoplazza-cli-2.0.6-linux-amd64.tar.gz"
-      sha256 "914e0e23996ba2b2eb8c411b894218020492d85c385edbe6cdeda784d38462cb"
+      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.7/shoplazza-cli-2.0.7-linux-amd64.tar.gz"
+      sha256 "e9097372900a59b7934aba049669e09a24ac975a515ef56d98be6668a8a16676"
       define_method(:install) do
         bin.install "shoplazza"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.6/shoplazza-cli-2.0.6-linux-arm64.tar.gz"
-      sha256 "45401594b79d4f80b0ba292630bfd931e2a81191973754b7ca7305f87d5c5d51"
+      url "https://github.com/Shoplazza/shoplazza-cli/releases/download/v2.0.7/shoplazza-cli-2.0.7-linux-arm64.tar.gz"
+      sha256 "6e4a90fd78077ee1a3e340bea0182a93f2f8554b51d84650f5c066dd107d9414"
       define_method(:install) do
         bin.install "shoplazza"
       end
